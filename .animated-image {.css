@@ -1,0 +1,16 @@
+.animated-image {
+    width: 200px; /* Ajuste la taille */
+    opacity: 0;
+    animation: fadeInMove 2s ease-in-out forwards;
+}
+
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
