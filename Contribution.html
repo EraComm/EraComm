@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Contribution - Eracomm</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .content-container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .button-container {
+                margin-top: 30px;
+            }
+            .image-container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 30px;
+                align-items: center; /* Centrer les éléments verticalement */
+            }
+            .image-container div {
+                text-align: center;
+                width: 200px; /* Fixer la largeur des colonnes */
+            }
+            .image-container img {
+                width: 100%;
+                border-radius: 15px;
+                max-width: 200px; /* Limite la taille maximale des images */
+            }
+            .image-container p {
+                color: #6C757D;
+                font-size: 16px;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 100px; /* Éloigne le titre du haut */
+                color: #6f42c1; /* Couleur violette pour le titre */
+            }
+            p {
+                text-align: center;
+                font-size: 18px;
+                color: #6C757D; /* Texte noir ou gris foncé */
+            }
+            .separator {
+                border-top: 2px solid #6f42c1; /* Trait séparateur violet */
+                margin: 40px 0;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recherche.html">Recherche</a></li>
+                        <li class="nav-item"><a class="nav-link" href="formation.html">Formation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contribution.html">Contribution</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section Contribution -->
+        <div class="content-container">
+            <!-- Grand titre -->
+            <h1>Contribuez à l'avenir d'Eracomm</h1>
+
+            <!-- Texte centré -->
+            <p>
+                Soutenez Eracomm pour nous aider à continuer à offrir une plateforme de qualité ! 
+                Votre contribution nous permet de développer de nouvelles fonctionnalités et d'améliorer l'expérience pour tous.
+            </p>
+
+            <!-- Bouton "Faire un don" -->
+            <div class="text-center button-container">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_donations">
+                    <input type="hidden" name="business" value="gaspard.boachon@gmail.com">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="item_name" value="Donation pour Eracomm">
+                    <input type="submit" class="btn btn-warning" value="Faire un Don PayPal" style="font-size: 24px; padding: 20px 40px; border-radius: 10px;">
+                </form>
+            </div>
+
+            <!-- Petit texte "Contribuez avec PayPal" -->
+            <p style="margin-top: 20px; font-size: 16px; color: #c1c1c1;">
+                
+            </p>
+
+            <!-- Séparateur -->
+            <div class="separator"></div>
+
+            <!-- Images centrées -->
+            <div class="image-container">
+                <div>
+                    <img src="hebergement-icon.png" alt="Hébergement">
+                    <p>Hébergement et maintenance</p>
+                </div>
+                <div>
+                    <img src="dev-icon.png" alt="Développement">
+                    <p>Nouvelles fonctionnalités</p>
+                </div>
+                <div>
+                    <img src="communaute-icon.png" alt="Communauté">
+                    <p>Une communauté engagée</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

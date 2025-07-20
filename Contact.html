@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Contact - EraComm Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #000000;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 100px;
+        }
+
+        .section-heading {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #8c52ff; /* Titre en violet */
+            text-align: center;
+        }
+
+        .section-subheading {
+            font-size: 18px;
+            color: #ada7a7;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            background-color: #8c52ff;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            width: 100%; /* Étire le bouton pour couvrir toute la largeur disponible */
+            max-width: 500px; /* Ajuste la largeur maximale */
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 0 auto 20px; /* Centrage et espacement */
+        }
+
+        .faq-answer {
+            padding: 15px;
+            font-size: 16px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            margin-top: 5px;
+            display: none;
+            color: #555;
+            text-align: center;
+        }
+
+        .faq-question:hover {
+            background-color: #6a2aee;
+        }
+
+        .faq-question::before {
+            content: "💬 ";
+            margin-right: 10px;
+        }
+
+        .faq-container {
+            background-color: #000000; /* Fond noir pour la section FAQ */
+            color: white; /* Texte en blanc */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative; /* Ajouté pour positionner la bande blanche */
+        }
+
+        .contact-container {
+            background-color: #000000;
+            padding: 40px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .page-section {
+            padding: 60px 0;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #8c52ff;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px; /* Décalage vers le bas */
+        }
+
+        .btn-primary:hover {
+            background-color: #6a2aee;
+        }
+
+        .contact-image {
+            width: 100%;
+            max-width: 500px; /* Ajusté pour être plus équilibré */
+            border-radius: 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col-lg-8 {
+            max-width: 800px;
+        }
+
+        .contact-container {
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Intro Section with image on right */
+        .intro-container {
+            background: url('chemin.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            text-align: left;
+            border-radius: 10px;
+        }
+
+        .intro-text {
+            max-width: 600px;
+            margin-left: 20px; /* Légèrement plus éloigné du bord gauche */
+        }
+
+        .intro-image {
+            max-width: 500px;
+            border-radius: 10px;
+            justify-self: end;
+        }
+
+        .intro-heading {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .intro-subheading {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Ensure full width of contact and FAQ sections */
+        .contact-container,
+        .faq-container {
+            width: 100%;
+            max-width: none;
+            border-radius: 0;
+            padding: 80px 0; /* More space to ensure sections fill the height */
+        }
+
+        .intro-heading {
+            font-size: 36px;
+            font-weight: 700;
+            color: #8c52ff; /* Titre en violet */
+            margin-bottom: 20px; /* Espacement sous le titre */
+        }
+
+        .intro-subheading {
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: left; /* Assure que le texte est bien aligné à gauche */
+        }
+
+        .faq-question {
+            width: 100%; /* Étire le bouton de la FAQ pour qu'il occupe toute la largeur disponible */
+        }
+
+       
+
+    </style>
+</head>
+<body id="page-top">
+
+    <!-- Navigation-->
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.png" alt="EraComm Logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recherche.html">Recherche</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formation.html">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contribution.html">Contribution</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section: Pourquoi nous contacter-->
+    <section class="page-section intro-container">
+        <div class="container">
+            <div class="intro-text">
+                <h2 class="intro-heading">Pourquoi nous contacter ?</h2>
+                <p class="intro-subheading">Vous avez des questions sur les formations ou besoin de conseils pour trouver celle qui vous convient ? Vous souhaitez faire des remarques ou des évaluations sur une formation que vous avez suivie ? Notre équipe est là pour vous aider ! Que ce soit pour des informations supplémentaires, des suggestions d'amélioration ou des évaluations sur les formations, n’hésitez pas à nous contacter. Nous serons ravis de vous accompagner dans votre parcours de formation.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="page-section" id="faq">
+        <div class="container faq-container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">FAQ</h2>
+                <p class="section-subheading">Les réponses à vos questions</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(1)">Pourquoi Eracomm est-il objectif et fiable ?</button>
+                <div class="faq-answer" id="answer1">Nous travaillons à fournir une plateforme transparente en sélectionnant les formations selon des critères stricts. Nous avons effectué des recherches sur la qualité des formations et mettons en place un système pour encourager des avis honnêtes et authentiques.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(2)">Pourquoi choisir Eracomm ?</button>
+                <div class="faq-answer" id="answer2">Eracomm est la première plateforme à centraliser les formations en ligne tout en offrant une transparence totale. Nous nous distinguons par un système d'authentification des avis qui garantit leur fiabilité.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(3)">Comment noter les formations ?</button>
+                <div class="faq-answer" id="answer3">Vous pouvez attribuer une note sur 5 étoiles et laisser un commentaire détaillé sur votre expérience. Nous vérifions les avis pour garantir leur authenticité.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(4)">Comment accéder aux formations sur Eracomm ?</button>
+                <div class="faq-answer" id="answer4">Vous pouvez rechercher des formations par catégorie ou utiliser notre système de recommandations personnalisées.</div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Contact Section -->
+      <section class="page-section contact-container" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contactez-nous</h2>
+                <p class="section-subheading">Pour toute question ou demande d’information, n’hésitez pas à nous contacter</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <form id="contactForm" action="send_email.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="name" type="text" placeholder="Votre Nom *" required />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" name="email" type="email" placeholder="Votre Email *" required />
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    <input class="form-control" name="phone" type="tel" placeholder="Votre Téléphone *" required />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-textarea">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Votre Message *" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn-primary" type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById("answer" + id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
